@@ -1,4 +1,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/vegas.js"></script>
 <script src="/js/jquery.matchHeight-min.js"></script>
 <script src="/js/polyfill.js"></script>
 <script src="/js/smooth-scroll.polyfills.min.js"></script>

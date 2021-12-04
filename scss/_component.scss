@@ -283,3 +283,74 @@ img {
     }
   }
 }
+
+
+/*==================================
+	List
+==================================*/
+.list{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  &__item{
+    width: calc(100% / 3);
+    @include sp{
+      width: 100%;
+    }
+  }
+  &__link{
+    @include pc{
+      &:hover{
+        .list__link--img-wrap{
+          .list__link--img-wrap--img{
+            img{
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+    &--img-wrap{
+      position: relative;
+      &--img{
+        overflow: hidden;
+        img{
+          transition: .5s ease-in-out
+        }
+      }
+      &--location{
+        @include Roboto(300);
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: .03em;
+        position: absolute;
+        bottom: 8px;
+        left: 25px;
+      }
+    }
+    &--title{
+      position: relative;
+      line-height: 23px;
+      padding: 12px 20px 25px;
+      border-right: 1px solid #f1f4f9;
+      @include sp{
+        padding: 6.5px 25px 25px;
+        line-height: 24px;
+        border-right: none;
+      }
+      &::before{
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: #f1f4f9;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        @include sp{
+          display: none;
+        }
+      }
+    }
+  }
+}

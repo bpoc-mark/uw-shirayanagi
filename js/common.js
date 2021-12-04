@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Webfont読込
 window.WebFontConfig = {
   google: {
-    families: ['Roboto:300', 'Noto+Sans+JP:300,400,500&subset=japanese']
+    families: ['Roboto:300, 700', 'Noto+Sans+JP:300,400,500&subset=japanese']
   },
   active: function () {
     sessionStorage.fonts = true;

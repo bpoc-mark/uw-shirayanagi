@@ -17,6 +17,7 @@ dd,
 tr {
   color: #000;
   font-size: 16px;
+  font-weight: 300;
   line-height: 1.5;
   font-family: YakuHanJP_Noto, "Noto Sans JP", san-serif;
 }
@@ -126,7 +127,89 @@ header {
 /* footer
 ==================================*/
 footer {
-  background: #000;
+  .footer_inner{
+    padding: 70px 25px 30px;
+    background: #000;
+    .top{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .logo{
+        width: 202.5px;
+        margin-bottom: 32px;
+      }
+      .nav{
+        width: 100%;
+        &__list{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+        }
+        &__item{
+          width: 50%;
+          &:first-child{
+            width: 100%;
+          }
+          &:not(:first-child){
+            margin-top: 19px;
+          }
+          &__link{
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: .06em;
+            position: relative;
+          } 
+        }
+      }
+    }
+    .bottom{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-top: 95px;
+      .b_left{
+        width: 100%;
+        margin-bottom: 25px;
+        p{
+          font-size: 14px;
+          letter-spacing: .06em;
+          line-height: 18.2px;
+          color: #c6c6c6;
+          @include is-max(345px){
+            font-size: 13px;
+          }
+          span{
+            color: #fff;
+            margin-bottom: 2px;
+            display: inline-block;
+          }
+          a{
+            color: #c6c6c6;
+          }
+        }
+      }
+      .b_right{
+        width: 100%;
+        p{
+          font-size: 10px;
+          color: #777777;
+          line-height: 13px;
+          letter-spacing: .06em;
+        }
+      }
+    }
+    .copy{
+      margin-top: 20px;
+      small{
+        color: #777777;
+        @include Roboto();
+        font-size: 10px;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
 
 #pageTop {

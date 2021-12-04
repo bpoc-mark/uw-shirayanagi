@@ -2,4 +2,106 @@
   Top
 ==================================*/
 #Top main {
+  padding-right: 120px;
+  .sect_1{
+    .wrapper{
+      position: relative;
+      .hero{
+        height: 740px;
+        .base{
+          // background-image: url(/images/top/sect_1/bg_img.jpg);
+          // background-size: cover;
+          // background-repeat: no-repeat;
+          height: 100%;
+        }
+        h1{
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 90px;
+          transform: translate(0, -50%);
+        }
+        .slider_num{
+          width: 71.9px;
+          height: 71.9px;
+          border-radius: 50%;
+          border: 1px solid #fff;
+          position: absolute;
+          bottom: 30px;
+          right: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span{
+            @include Roboto(700);
+            font-size: 18px;
+            color: #fff;
+            letter-spacing: .2em;
+          }
+        }
+      }
+    }
+  }
+  .sect_2{
+    .wrapper{
+      padding-top: 15px;
+      padding-bottom: 55px;
+      .news{
+        padding-left: 20px;
+        &__item{
+          display: flex;
+          align-items: flex-start
+        }
+        &__cat{
+          @include Roboto();
+          font-size: 16px;
+          letter-spacing: .14em;
+          margin-right: 10px;
+        }
+        &__link{
+          position: relative;
+          display: flex;
+          align-items: flex-start;
+          &:hover{
+            &::before{
+              width: 100%;
+            }
+          }
+          &::before{
+            content: "";
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: .3s ease-in-out
+          }
+          &--date{
+            @include Roboto();
+            font-size: 14px;
+            color: #a9abb0;
+            letter-spacing: .03em;
+            position: relative;
+            top: 1.5px;
+            margin-right: 12px;
+          }
+          &--title{
+            margin-top: -3px;
+            p{
+              font-size: 14px;
+              line-height: 23px;
+              letter-spacing: .03em;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sect_3{
+    .wrapper{
+      padding-bottom: 75px;
+    }
+  }
 }

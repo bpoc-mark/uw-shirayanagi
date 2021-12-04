@@ -2,4 +2,112 @@
   Top
 ==================================*/
 #Top main {
+  .sect_1{
+    .wrapper{
+      position: relative;
+      .hero{
+        height: 600px;
+        .base{
+          // background-image: url(/images/top/sect_1/bg_img.jpg);
+          // background-size: cover;
+          // background-repeat: no-repeat;
+          // background-position: 39%;
+          height: 100%;
+        }
+        h1{
+          max-width: 324px;
+          position: absolute;
+          padding-right: 25px;
+          top: 50%;
+          left: 25px;
+          transform: translate(0, -50%);
+        }
+        .slider_num{
+          width: 64.145px;
+          height: 64.145px;
+          border-radius: 50%;
+          border: 1px solid #fff;
+          position: absolute;
+          bottom: 25px;
+          right: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span{
+            @include Roboto(700);
+            font-size: 18px;
+            color: #fff;
+            letter-spacing: .2em;
+          }
+        }
+      }
+    }
+  }
+  .sect_2{
+    .wrapper{
+      padding-top: 15px;
+      padding-bottom: 50px;
+      .news{
+        padding-left: 15px;
+        &__item{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start
+        }
+        &__cat{
+          @include Roboto();
+          font-size: 16px;
+          letter-spacing: .14em;
+          width: 77px;
+        }
+        &__link{
+          width: calc(100% - 77px);
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          overflow: hidden;
+          &--date{
+            width: 85px;
+            @include Roboto();
+            font-size: 14px;
+            color: #a9abb0;
+            letter-spacing: .03em;
+            position: relative;
+            top: 1.5px;
+          }
+          &--title{
+            width: calc(100% - 85px);
+            margin-top: -3px;
+            // background-color: red;
+            overflow: hidden;
+            p{
+              font-size: 14px;
+              line-height: 23px;
+              letter-spacing: .03em;
+              white-space: nowrap;
+              position: relative;
+              animation: floatText 10s infinite ease-in-out;
+            }
+
+            @keyframes floatText{
+              from {
+                transform: translateX(100%);
+              }
+            
+              to {
+                /* left: auto; */
+                transform: translateX(-200%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sect_3{
+    .wrapper{
+      padding-bottom: 90px;
+    }
+  }
 }
