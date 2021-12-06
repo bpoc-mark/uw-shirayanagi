@@ -21,7 +21,7 @@ dd,
 tr {
   color: #000;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   font-family: YakuHanJP_Noto, "Noto Sans JP", san-serif;
 }
@@ -112,7 +112,6 @@ header .header_inner .h_left .logo a {
   background-repeat: no-repeat;
   width: 160px;
   height: 26.5px;
-  transition: .3s ease-in-out;
 }
 
 header .header_inner .h_right {
@@ -205,12 +204,17 @@ header .nav__item {
 
 header .nav__item:first-child {
   width: 100%;
+  border-top: 1px solid #151515;
+}
+
+header .nav__item:nth-child(even) {
+  border-right: 1px solid #151515;
 }
 
 header .nav__link {
   position: relative;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   letter-spacing: .06em;
   color: #777777;
@@ -344,7 +348,7 @@ footer .footer_inner .copy {
 footer .footer_inner .copy small {
   color: #777777;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 10px;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -786,20 +790,25 @@ img[src$=".png"], img[src$=".jpg"] {
 
 .list__link--img-wrap--location {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   color: #fff;
   letter-spacing: .03em;
   position: absolute;
   bottom: 8px;
-  left: 25px;
+  left: 20px;
+}
+
+@media (max-width: 899px) {
+  .list__link--img-wrap--location {
+    left: 25px;
+  }
 }
 
 .list__link--title {
   position: relative;
   line-height: 23px;
   padding: 12px 20px 25px;
-  border-right: 1px solid #f1f4f9;
 }
 
 @media (max-width: 899px) {
@@ -807,23 +816,6 @@ img[src$=".png"], img[src$=".jpg"] {
     padding: 6.5px 25px 25px;
     line-height: 24px;
     border-right: none;
-  }
-}
-
-.list__link--title::before {
-  content: "";
-  width: 1px;
-  height: 100%;
-  background-color: #f1f4f9;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-@media (max-width: 899px) {
-  .list__link--title::before {
-    display: none;
   }
 }
 
@@ -838,11 +830,15 @@ img[src$=".png"], img[src$=".jpg"] {
 }
 
 #Top main .sect_1 .wrapper .hero {
-  height: 100vh;
+  height: 600px;
 }
 
 #Top main .sect_1 .wrapper .hero .base {
   height: 100%;
+}
+
+#Top main .sect_1 .wrapper .hero .base .vegas-timer {
+  opacity: 0;
 }
 
 #Top main .sect_1 .wrapper .hero h2 {
@@ -914,7 +910,7 @@ img[src$=".png"], img[src$=".jpg"] {
 
 #Top main .sect_2 .wrapper .news__cat {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   letter-spacing: .14em;
   width: 77px;
@@ -932,7 +928,7 @@ img[src$=".png"], img[src$=".jpg"] {
 #Top main .sect_2 .wrapper .news__link--date {
   width: 85px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   color: #a9abb0;
   letter-spacing: .03em;

@@ -10,9 +10,6 @@
         // height: 740px;
         height: 100vh;
         .base{
-          // background-image: url(/images/top/sect_1/bg_img.jpg);
-          // background-size: cover;
-          // background-repeat: no-repeat;
           height: 100%;
           .vegas-timer{
             opacity: 0;
@@ -124,7 +121,13 @@
   }
   .sect_3{
     .wrapper{
-      padding-bottom: 75px;
+      .list{
+        padding-bottom: 75px;
+        background-image: url(/images/top/sect_3/bg_line.png);
+        background-size: 66.8% auto;
+        background-position: 50%;
+        background-repeat: repeat-y;
+      }
     }
   }
 }

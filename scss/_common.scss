@@ -17,7 +17,7 @@ dd,
 tr {
   color: #000;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   font-family: YakuHanJP_Noto, "Noto Sans JP", san-serif;
 }
@@ -173,6 +173,7 @@ header {
           font-size: 10px;
           color: #a9abb0;
           letter-spacing: .08em;
+          text-transform: uppercase;
         }
       }
     }

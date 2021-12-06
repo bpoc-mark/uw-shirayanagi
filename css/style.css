@@ -21,7 +21,7 @@ dd,
 tr {
   color: #000;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   font-family: YakuHanJP_Noto, "Noto Sans JP", san-serif;
 }
@@ -177,10 +177,11 @@ header .header_inner .h_right .copy small {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 10px;
   color: #a9abb0;
   letter-spacing: .08em;
+  text-transform: uppercase;
 }
 
 header .nav {
@@ -855,20 +856,25 @@ img[src$=".png"], img[src$=".jpg"] {
 
 .list__link--img-wrap--location {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
   color: #fff;
   letter-spacing: .03em;
   position: absolute;
   bottom: 8px;
-  left: 25px;
+  left: 20px;
+}
+
+@media (max-width: 899px) {
+  .list__link--img-wrap--location {
+    left: 25px;
+  }
 }
 
 .list__link--title {
   position: relative;
   line-height: 23px;
   padding: 12px 20px 25px;
-  border-right: 1px solid #f1f4f9;
 }
 
 @media (max-width: 899px) {
@@ -876,23 +882,6 @@ img[src$=".png"], img[src$=".jpg"] {
     padding: 6.5px 25px 25px;
     line-height: 24px;
     border-right: none;
-  }
-}
-
-.list__link--title::before {
-  content: "";
-  width: 1px;
-  height: 100%;
-  background-color: #f1f4f9;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-@media (max-width: 899px) {
-  .list__link--title::before {
-    display: none;
   }
 }
 
@@ -989,7 +978,7 @@ img[src$=".png"], img[src$=".jpg"] {
 
 #Top main .sect_2 .wrapper .news__cat {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   letter-spacing: .14em;
   margin-right: 10px;
@@ -1019,7 +1008,7 @@ img[src$=".png"], img[src$=".jpg"] {
 
 #Top main .sect_2 .wrapper .news__link--date {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   color: #a9abb0;
   letter-spacing: .03em;
@@ -1038,8 +1027,12 @@ img[src$=".png"], img[src$=".jpg"] {
   letter-spacing: .03em;
 }
 
-#Top main .sect_3 .wrapper {
+#Top main .sect_3 .wrapper .list {
   padding-bottom: 75px;
+  background-image: url(/images/top/sect_3/bg_line.png);
+  background-size: 66.8% auto;
+  background-position: 50%;
+  background-repeat: repeat-y;
 }
 
 /*==================================

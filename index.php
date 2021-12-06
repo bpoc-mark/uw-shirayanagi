@@ -61,138 +61,35 @@
 			<section class="sect_3">
 				<div class="wrapper">
 					<ul class="list">
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_1.jpg" alt="HOSPITAL">
-									</figure>
-									<p class="list__link--img-wrap--location">HOSPITAL</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_2.jpg" alt="OFFICE">
-									</figure>
-									<p class="list__link--img-wrap--location">OFFICE</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_3.jpg" alt="FACTORY / OFFICE">
-									</figure>
-									<p class="list__link--img-wrap--location">FACTORY / OFFICE</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_4.jpg" alt="FACILITY">
-									</figure>
-									<p class="list__link--img-wrap--location">FACILITY</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_5.jpg" alt="OFFICE">
-									</figure>
-									<p class="list__link--img-wrap--location">OFFICE</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_6.jpg" alt="FACILITY">
-									</figure>
-									<p class="list__link--img-wrap--location">FACILITY</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_7.jpg" alt="OFFICE / FACTORY">
-									</figure>
-									<p class="list__link--img-wrap--location">OFFICE / FACTORY</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_8.jpg" alt="OFFICE">
-									</figure>
-									<p class="list__link--img-wrap--location">OFFICE</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_9.jpg" alt="FACILITY">
-									</figure>
-									<p class="list__link--img-wrap--location">FACILITY</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_10.jpg" alt="HOSPITAL">
-									</figure>
-									<p class="list__link--img-wrap--location">HOSPITAL</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_11.jpg" alt="HOSPITAL">
-									</figure>
-									<p class="list__link--img-wrap--location">HOSPITAL</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
-						<li class="list__item">
-							<a href="" class="list__link">
-								<div class="list__link--img-wrap">
-									<figure class="list__link--img-wrap--img">
-										<img src="/images/top/sect_3/img_12.jpg" alt="OFFICE">
-									</figure>
-									<p class="list__link--img-wrap--location">OFFICE</p>
-								</div>
-								<h3 class="list__link--title">タイトルが入りますタイトルが入ります</h3>
-							</a>
-						</li>
+						<?php
+						$list = [
+							['/images/top/sect_3/img_1.jpg', 'HOSPITAL', 'タイトルが入りますタイトルが入ります'],
+							['/images/top/sect_3/img_2.jpg', 'OFFICE', 'タイトルが入りますタイトルが入ります'],
+							['/images/top/sect_3/img_3.jpg', 'FACTORY / OFFICE', 'タイトルが入りますタイトルが入ります'],
+							['/images/top/sect_3/img_4.jpg', 'FACILITY', 'タイトルが入りますタイトルが入ります'],
+							['/images/top/sect_3/img_5.jpg', 'OFFICE', 'タイトルが入りますタイトルが入ります'],
+							['/images/top/sect_3/img_6.jpg', 'FACILITY', 'タイトルが入りますタイトルが入ります'],
+							['/images/top/sect_3/img_7.jpg', 'OFFICE / FACTORY', 'タイトルが入りますタイトルが入ります'],
+							['/images/top/sect_3/img_8.jpg', 'OFFICE', 'タイトルが入りますタイトルが入ります'],
+							['/images/top/sect_3/img_9.jpg', 'FACILITY', 'タイトルが入りますタイトルが入ります'],
+							['/images/top/sect_3/img_10.jpg', 'HOSPITAL', 'タイトルが入りますタイトルが入ります'],
+							['/images/top/sect_3/img_11.jpg', 'HOSPITAL', 'タイトルが入りますタイトルが入ります'],
+							['/images/top/sect_3/img_12.jpg', 'OFFICE', 'タイトルが入りますタイトルが入ります'],
+						];
+						foreach ($list as $key => $el) :
+						?>
+							<li class="list__item">
+								<a href="" class="list__link">
+									<div class="list__link--img-wrap">
+										<figure class="list__link--img-wrap--img">
+											<img src="<?= $el[0] ?>" alt="<?= $el[1] ?>">
+										</figure>
+										<p class="list__link--img-wrap--location"><?= $el[1] ?></p>
+									</div>
+									<h3 class="list__link--title"><?= $el[2] ?></h3>
+								</a>
+							</li>
+						<?php endforeach; ?>
 					</ul>
 				</div>
 			</section>

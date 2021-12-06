@@ -6,14 +6,13 @@
     .wrapper{
       position: relative;
       .hero{
-        // height: 600px;
-        height: 100vh;
+        height: 600px;
+        // height: 100vh;
         .base{
-          // background-image: url(/images/top/sect_1/bg_img.jpg);
-          // background-size: cover;
-          // background-repeat: no-repeat;
-          // background-position: 39%;
           height: 100%;
+          .vegas-timer{
+            opacity: 0;
+          }
         }
         h2{
           max-width: 324px;

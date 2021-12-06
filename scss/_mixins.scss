@@ -40,12 +40,12 @@ $font-color: #000000;
 
 // light  @include Noto_Sans(300);
 // medium @include Noto_Sans(500);
-@mixin Noto_Sans($weight: 300) {
+@mixin Noto_Sans($weight: 400) {
   font-family: YakuHanJP_Noto, "Noto Sans JP", sans-serif;
   font-weight: $weight;
 }
 
-@mixin Roboto($weight: 300) {
+@mixin Roboto($weight: 400) {
   font-family: 'Roboto', sans-serif;
   font-weight: $weight;
 }
