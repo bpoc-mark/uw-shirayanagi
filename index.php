@@ -24,19 +24,20 @@
 <body id="Top">
 	<?php include($_SERVER['DOCUMENT_ROOT'] . "/inc/tag/content_tag.php"); ?>
 	<div id="AllBox">
-		<!-- <header>
+		<header class="p-top">
 			<?php include($_SERVER['DOCUMENT_ROOT'] . "/inc/header_box.php"); ?>
-		</header> -->
+		</header>
 
 		<main>
 			<section class="sect_1">
 				<div class="wrapper">
 					<div class="hero">
 						<div class="base"></div>
-						<h1>
+						<h2>
 							<img src="/images/top/sect_1/hero_img.svg" alt="SHIRAYANAGI ARCHITECT OFFICE 白柳一級建築設計事務所">
-						</h1>
+						</h2>
 						<div class="slider_num">
+							<svg id="f5ec71fd-8ccd-46a5-83ba-0b1b195b6b31" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72.9 72.9"><circle cx="36.45" cy="36.45" r="35.95" style="fill:none;stroke-linecap:round;stroke-linejoin:round"/></svg>
 							<span>0</span>
 						</div>
 					</div>

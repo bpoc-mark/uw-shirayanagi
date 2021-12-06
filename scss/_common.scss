@@ -70,9 +70,202 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
-  background: #fff;
   width: 100%;
   height: 100px;
+  &.p-top{
+    .header_inner{
+      .h_left{
+        .logo{
+          opacity: 0;
+        }
+      }
+    }
+  }
+  &.menuActive{
+    .header_inner{
+      .h_right{
+        .copy{
+          bottom: 30px;
+        }
+      }
+    }
+  }
+  .header_inner{
+    height: 100%;
+    .h_left{
+      padding-left: 50px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .logo{
+        a{
+          display: inline-block;
+          background-image: url(/images/common/header_logo.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 216px;
+          height: 36px;
+        }
+      }
+    }
+    .h_right{
+      position: fixed;
+      top: 50%;
+      right: 0;
+      z-index: 999;
+      transform: translate(0, -50%);
+      height: 100%;
+      width: 140px;
+      .menu {
+        background: #000;
+        width: 100%;
+        height: 82px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        span {
+          position: absolute;
+          top: 33px;
+          left: 0;
+          right: 0;
+          display: inline-block;
+          background: #fff;
+          width: 60px;
+          height: 3px;
+          margin: auto;
+          transition: 0.3s;
+          &.line-t.show {
+            top: 40px;
+            transform: rotate(-15deg);
+          }
+          // &.line-m {
+          //   top: 22px;
+          //   &.show {
+          //     opacity: 0;
+          //   }
+          // }
+          &.line-b {
+            top: 47px;
+            &.show {
+              top: 40px;
+              transform: rotate(15deg);
+            }
+          }
+        }
+        p {
+          color: #fff;
+          padding: 35px 0 0;
+          font-size: 10px;
+          text-align: center;
+        }
+      }
+      .copy{
+        position: absolute;
+        bottom: 35px;
+        right: 55px;
+        transition: .3s ease-in-out;
+        small{
+          writing-mode: vertical-rl;
+          text-orientation: mixed;
+          @include Roboto();
+          font-size: 10px;
+          color: #a9abb0;
+          letter-spacing: .08em;
+        }
+      }
+    }
+  }
+  .nav{
+    transition: .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 990;
+    width: calc(100% - 120px);
+    height: 100%;
+    background-image: url(/images/common/bg_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    &.isActive{
+      opacity: 1;
+      visibility: visible;
+    }
+    &__list{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0, -50%);
+      width: 680px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; 
+    }
+    &__item{
+      width: 50%;
+      &:not(:last-child){
+        margin-bottom: 12px
+      }
+      &:nth-child(2){
+        order: 1;
+      }
+      &:nth-child(3){
+        order: 3;
+      }
+      &:nth-child(4){
+        order: 5;
+      }
+      &:nth-child(5){
+        order: 7;
+      }
+      &:nth-child(6){
+        order: 0;
+      }
+      &:nth-child(7){
+        order: 2;
+      }
+      &:nth-child(8){
+        order: 4;
+      }
+      &:nth-child(9){
+        order: 6;
+      }
+    }
+    &__link{
+      position: relative;
+      @include Roboto(400);
+      font-size: 26px;
+      letter-spacing: .14em;
+      &:hover{
+        &::before{
+          width: 100%;
+        }
+      }
+      span{
+        @include Noto_Sans(300);
+        font-size: 12px;
+        letter-spacing: .06em;
+        color: #a9abb0;
+        margin-left: 15px;
+        position: relative;
+        top: -5px;
+      }
+      &::before{
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: .3s ease-in-out;
+      }
+    }
+  }
 }
 
 /* footer

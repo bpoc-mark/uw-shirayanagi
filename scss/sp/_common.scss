@@ -58,69 +58,173 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
-  background: #fff;
   width: 100%;
-  height: 55px;
-  .header_inner {
-    display: flex;
-    justify-content: space-between;
-  }
-  .logo {
-    margin: 12px 0 0 15px;
-    img {
-    }
-  }
-  .menu {
-    position: relative;
-    background: #000;
-    width: 55px;
-    height: 55px;
-    span {
-      position: absolute;
-      top: 16px;
-      left: 0;
-      right: 0;
-      display: inline-block;
-      background: #fff;
-      width: 15px;
-      height: 2px;
-      margin: auto;
-      transition: 0.3s;
-      &.line-t.show {
-        top: 22px;
-        transform: rotate(-32deg);
-      }
-      &.line-m {
-        top: 22px;
-        &.show {
+  height: 50px;
+  transition: .3s ease-in-out;
+  &.p-top{
+    .header_inner{
+      .h_left{
+        .logo{
           opacity: 0;
         }
       }
-      &.line-b {
-        top: 28px;
-        &.show {
-          top: 22px;
-          transform: rotate(32deg);
+    }
+  }
+  &.menuActive{
+    background-color: #000;
+    .header_inner{
+      .h_left{
+        .logo{
+          opacity: 1;
+          a{
+            width: 142px;
+            height: 24px;
+            background-image: url(/images/common/footer_logo.svg);
+          }
+        }
+      }
+      .h_right{
+        .menu{
+          background-color: #151515;
         }
       }
     }
-    p {
-      color: #fff;
-      padding: 35px 0 0;
-      font-size: 10px;
-      text-align: center;
+  }
+  .header_inner{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .h_left{
+      padding-left: 25px;
+      .logo{
+        a{
+          display: inline-block;
+          background-image: url(/images/common/header_logo.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 160px;
+          height: 26.5px;
+          transition: .3s ease-in-out;
+        }
+      }
+    }
+    .h_right{
+      height: 100%;
+      width: 80px;
+      .menu {
+        background: #000;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        position: relative;
+        span {
+          position: absolute;
+          top: 21px;
+          left: 0;
+          right: 0;
+          display: inline-block;
+          background: #fff;
+          width: 30px;
+          height: 1.5px;
+          margin: auto;
+          transition: 0.3s;
+          &.line-t.show {
+            top: 24px;
+            transform: rotate(-15deg);
+          }
+          // &.line-m {
+          //   top: 22px;
+          //   &.show {
+          //     opacity: 0;
+          //   }
+          // }
+          &.line-b {
+            top:28px;
+            &.show {
+              top: 24px;
+              transform: rotate(15deg);
+            }
+          }
+        }
+        p {
+          color: #fff;
+          padding: 35px 0 0;
+          font-size: 10px;
+          text-align: center;
+        }
+      }
+      .copy{
+        display: none;
+      }
     }
   }
-  nav {
-    display: none;
+  .nav{
+    transition: .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
-    top: 55px;
+    top: 50px;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: #000;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+    z-index: 990;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; /* Lets it scroll lazy */
+    padding-bottom: 50px;
+    &.isActive{
+      opacity: 1;
+      visibility: visible;
+    }
+    &__list{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-bottom: 100px;
+    }
+    &__item{
+      width: 50%;
+      padding: 25px;
+      border-bottom: 1px solid #151515;
+      box-sizing: border-box;
+      &:first-child{
+        width: 100%;
+      }
+    }
+    &__link{
+      position: relative;
+      @include Roboto();
+      font-size: 12px;
+      letter-spacing: .06em;
+      color: #777777;
+      display: flex;
+      flex-direction: column;
+      &:hover{
+        &::before{
+          width: 100%;
+        }
+      }
+      span{
+        @include Noto_Sans(300);
+        font-size: 16px;
+        letter-spacing: .06em;
+        color: #fff;
+        order: -1;
+      }
+      &::before{
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: .3s ease-in-out;
+      }
+    }
   }
 }
 

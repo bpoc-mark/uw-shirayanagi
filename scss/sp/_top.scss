@@ -6,7 +6,8 @@
     .wrapper{
       position: relative;
       .hero{
-        height: 600px;
+        // height: 600px;
+        height: 100vh;
         .base{
           // background-image: url(/images/top/sect_1/bg_img.jpg);
           // background-size: cover;
@@ -14,7 +15,7 @@
           // background-position: 39%;
           height: 100%;
         }
-        h1{
+        h2{
           max-width: 324px;
           position: absolute;
           padding-right: 25px;
@@ -33,6 +34,25 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          svg{
+            position: absolute;
+            width: 103%;
+            height: 103%;
+            transform: rotate(-90deg);
+            circle{
+              stroke: #000;
+              stroke-dashoffset: 225px;
+              stroke-dasharray: 225px;
+            }
+          }
+          @keyframes fillCirle {
+            from {
+              stroke-dashoffset: 225px;
+            }
+            to {
+              stroke-dashoffset: 0;
+            }
+          }
           span{
             @include Roboto(700);
             font-size: 18px;

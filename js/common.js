@@ -23,6 +23,12 @@ $(function () {
 
   }
 
+  $('#nav_menu').click(function () {
+    $('header').toggleClass('menuActive');
+    $('#nav_menu span').toggleClass('show');
+    $('#navMenu').toggleClass('isActive');
+  });
+
 });
 
 
@@ -94,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Webfont読込
 window.WebFontConfig = {
   google: {
-    families: ['Roboto:300, 700', 'Noto+Sans+JP:300,400,500&subset=japanese']
+    families: ['Roboto:300,400,700', 'Noto+Sans+JP:300,400,500&subset=japanese']
   },
   active: function () {
     sessionStorage.fonts = true;

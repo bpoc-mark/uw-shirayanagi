@@ -248,6 +248,9 @@
         .removeClass('vegas-timer-running')
         .find('div')
         .css('transition-duration', '0ms');
+        
+      // CUSTOM ADDED TIMER
+      $('.slider_num svg circle').css({"animation-name": "fillCirleNone", "animation-duration":"0ms"});
 
       if (this.ended || this.paused || this.noshow) {
         return;
@@ -259,6 +262,10 @@
             .addClass('vegas-timer-running')
             .find('div')
             .css('transition-duration', self._options('delay') - 100 + 'ms');
+
+          // CUSTOM ADDED TIMER
+          $('.slider_num svg circle').css({"animation-name": "fillCirle", "animation-duration": self._options('delay') + "ms"});
+
         }, 100);
       }
     },

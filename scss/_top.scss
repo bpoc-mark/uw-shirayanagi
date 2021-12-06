@@ -7,14 +7,18 @@
     .wrapper{
       position: relative;
       .hero{
-        height: 740px;
+        // height: 740px;
+        height: 100vh;
         .base{
           // background-image: url(/images/top/sect_1/bg_img.jpg);
           // background-size: cover;
           // background-repeat: no-repeat;
           height: 100%;
+          .vegas-timer{
+            opacity: 0;
+          }
         }
-        h1{
+        h2{
           width: 100%;
           position: absolute;
           top: 50%;
@@ -32,6 +36,25 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          svg{
+            position: absolute;
+            width: 103%;
+            height: 103%;
+            transform: rotate(-90deg);
+            circle{
+              stroke: #000;
+              stroke-dashoffset: 225px;
+              stroke-dasharray: 225px;
+            }
+          }
+          @keyframes fillCirle {
+            from {
+              stroke-dashoffset: 225px;
+            }
+            to {
+              stroke-dashoffset: 0;
+            }
+          }
           span{
             @include Roboto(700);
             font-size: 18px;
