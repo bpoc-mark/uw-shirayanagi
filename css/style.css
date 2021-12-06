@@ -111,6 +111,10 @@ header .header_inner .h_left .logo a {
   height: 36px;
 }
 
+header .header_inner .h_left .logo a i {
+  opacity: 0;
+}
+
 header .header_inner .h_right {
   position: fixed;
   top: 50%;

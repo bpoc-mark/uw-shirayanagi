@@ -114,6 +114,10 @@ header .header_inner .h_left .logo a {
   height: 26.5px;
 }
 
+header .header_inner .h_left .logo a i {
+  opacity: 0;
+}
+
 header .header_inner .h_right {
   height: 100%;
   width: 80px;

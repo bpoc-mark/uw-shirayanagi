@@ -106,6 +106,9 @@ header {
           width: 160px;
           height: 26.5px;
           // transition: .3s ease-in-out;
+          i{
+            opacity: 0;
+          }
         }
       }
     }

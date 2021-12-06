@@ -5,9 +5,9 @@ $str = explode('/', $url); ?>
 	<div class="h_left">
 		<?php
 		if ($str[1] == "") {
-			echo '<h1 class="logo"><a href="/"></a></h1>';
+			echo '<h1 class="logo"><a href="/"><i>'. SITE_NAME .'</i></a></h1>';
 		} else {
-			echo '<p class="logo"><a href="/"></a></p>';
+			echo '<p class="logo"><a href="/"><i>'. SITE_NAME .'</i></a></p>';
 		}
 		?>
 	</div>
