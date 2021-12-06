@@ -837,6 +837,11 @@ img[src$=".png"], img[src$=".jpg"] {
   height: 600px;
 }
 
+#Top main .sect_1 .wrapper .hero.isOpened h2 {
+  transform: translate(0, -50%);
+  opacity: 1;
+}
+
 #Top main .sect_1 .wrapper .hero .base {
   height: 100%;
 }
@@ -851,7 +856,9 @@ img[src$=".png"], img[src$=".jpg"] {
   padding-right: 25px;
   top: 50%;
   left: 25px;
-  transform: translate(0, -50%);
+  transform: translate(0, -30%);
+  opacity: 0;
+  transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s, opacity 0.6s linear 0.2s;
 }
 
 #Top main .sect_1 .wrapper .hero .slider_num {

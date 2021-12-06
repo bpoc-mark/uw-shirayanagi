@@ -120,6 +120,14 @@
 		});
 	</script>
 
+	<script>	
+		$(document).ready(function(){
+			// $(window).on('load', function (e) {
+				$('.sect_1 .wrapper .hero').addClass('isOpened');
+			// })
+		});
+	</script>
+
 </body>
 
 </html>
