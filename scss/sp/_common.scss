@@ -98,6 +98,8 @@ header {
     .h_left{
       padding-left: 25px;
       .logo{
+        display: flex;
+        align-items: center;
         a{
           display: inline-block;
           background-image: url(/images/common/header_logo.svg);

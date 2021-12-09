@@ -343,3 +343,96 @@ img {
     }
   }
 }
+
+.jumbo{
+  margin: 100px 0 0 0;
+  padding: 0 0 0 50px;
+  height: 265px;
+  display: flex;
+  align-items: center;
+  @include sp{
+    height: 195px;
+    margin: 50px 0 0 0;
+    padding: 0 0 0 25px;
+  }
+  &__wrap{ 
+    &--head-en{
+      @include Roboto();
+      font-size: 42px;
+      letter-spacing: .14em;
+      @include sp{
+        font-size: 38px;
+      }
+    }
+    &--head-jp{
+      font-size: 14px;
+      color: #adafb5;
+      letter-spacing: .2em;
+      padding: 12px 0 0 3px;
+      @include sp{
+        font-size: 12px;
+        padding: 7px 0 0 3px;
+      }
+    }
+  }
+}
+
+.p-navi{
+  display: flex;
+  padding: 70px 0 40px 50px;
+  @include sp{
+    padding: 90px 0 40px 25px;
+  }
+  &__btn{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #f6f7f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    @include sp{
+      width: 50px;
+      height: 50px;
+    }
+    @include pc{
+      &:hover{
+        &::before{
+          left: 0;
+        }
+        svg{
+          path{
+            fill: #fff;
+          }
+        }
+      }
+      &::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 100%;
+        transition: .3s ease-in-out;
+      }
+    }
+    &.left{
+      margin-right: 10px;
+    }
+    &.right{
+      svg{
+        transform: scale(-1);
+      }
+    }
+    svg{
+      transition: .3s ease-in-out;
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
