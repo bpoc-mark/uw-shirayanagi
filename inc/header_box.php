@@ -14,7 +14,6 @@ $str = explode('/', $url); ?>
 	<div class="h_right">
 		<div class="menu" id="nav_menu">
 			<span class="line line-t"></span>
-			<!-- <span class="line line-m"></span> -->
 			<span class="line line-b"></span>
 			<p></p>
 		</div>

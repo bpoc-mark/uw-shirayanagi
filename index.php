@@ -110,7 +110,6 @@
 			],
 			transition: ['fade'],
 			animation: 'kenburns',
-			// timer: false,
 			delay: 5000,
 			walk: function (index, slideSettings) {
 				let slide_num = index + 1;
@@ -121,11 +120,6 @@
 	</script>
 
 	<script>	
-		// $(document).ready(function(){
-		// 	// $(window).on('load', function (e) {
-		// 		$('.sect_1 .wrapper .hero').addClass('isOpened');
-		// 	// })
-		// });
 		const sect1 = document.querySelector('.sect_1 .wrapper .hero');
 		window.addEventListener('load', function() {
 			sect1.classList.add('isOpened');
@@ -135,6 +129,20 @@
 		}, 3000);
 	</script>
 
+	<script>
+		$(function() {
+			let marqueeAllowed = false
+			$(window).on('load resize',function() {
+				var w = $(window).width();
+				if (w < 900) {
+					marqueeAllowed = true;
+				}
+				if(marqueeAllowed){
+					$( ".news__link--title p" ).wrap( "<marquee direction='left' scrollamount='6' behavior='scroll'></marquee>" );
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>

@@ -105,7 +105,6 @@ header {
           background-repeat: no-repeat;
           width: 160px;
           height: 26.5px;
-          // transition: .3s ease-in-out;
           i{
             opacity: 0;
           }
@@ -136,12 +135,6 @@ header {
             top: 24px;
             transform: rotate(-15deg);
           }
-          // &.line-m {
-          //   top: 22px;
-          //   &.show {
-          //     opacity: 0;
-          //   }
-          // }
           &.line-b {
             top:28px;
             &.show {

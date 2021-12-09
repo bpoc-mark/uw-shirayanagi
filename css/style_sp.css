@@ -885,6 +885,7 @@ img[src$=".png"], img[src$=".jpg"] {
   stroke: #000;
   stroke-dashoffset: 225px;
   stroke-dasharray: 225px;
+  animation-timing-function: linear;
 }
 
 @keyframes fillCirle {
@@ -959,17 +960,6 @@ img[src$=".png"], img[src$=".jpg"] {
   letter-spacing: .03em;
   white-space: nowrap;
   position: relative;
-  animation: floatText 10s infinite ease-in-out;
-}
-
-@keyframes floatText {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    /* left: auto; */
-    transform: translateX(-200%);
-  }
 }
 
 #Top main .sect_3 .wrapper {
