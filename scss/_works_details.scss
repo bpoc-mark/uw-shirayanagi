@@ -1,0 +1,103 @@
+/*==================================
+  Works Details
+==================================*/
+#Works_details main {
+  width: calc(100% - 120px);
+  background-image: url(/images/top/sect_3/bg_line.png);
+  background-size: 66.8% auto;
+  background-position: 50%;
+  background-repeat: repeat-y;
+  .sect_1{
+    .wrapper{
+      padding-left: 50px;
+      .works{
+        &__head{
+          margin-bottom: 40px;
+          &--location{
+            @include Roboto();
+            font-size: 14px;
+            color: #adafb5;
+            letter-spacing: .03em;
+            margin-bottom: 10px;
+          }
+          &--title{
+            font-size: 24px;
+            letter-spacing: .03em;
+          }
+        }
+        &__content{
+          display: flex;
+          flex-wrap: wrap;
+          &--left{
+            width: 48%;
+            padding-right: 60px;
+            .w_content{
+              line-height: 24px;
+              letter-spacing: .03em;
+            }
+            .list{
+              width: 100%;
+              margin-top: 40px;
+              &__item{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                &:not(:last-child){
+                  margin-bottom: 6px;
+                }
+                &--title{
+                  position: relative;
+                  width: 90px;
+                  &::after{
+                    content: ":";
+                    display: block;
+                    position: absolute;
+                    top: -.2rem;
+                    right: 0;
+                  }
+                }
+                &--desc{
+                  width: calc(100% - 90px);
+                  padding-left: 15px;
+                  p{
+                    color: #64666c;
+                  }
+                }
+              }
+            }
+          }
+          &--right{
+            width: 52%;
+            .img_wrap{
+              .img_main{
+                margin-bottom: 10px;
+              }
+              .img_list{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                .img_item{
+                  width: 18.75%;
+                  &:not(:first-child){
+                    margin-left: 1.5625%;
+                  }
+                  &.isActive{
+                    border: 1px solid #66737e;
+                  }
+                  img{
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .p-navi{
+        padding: 100px 0 40px;
+      }
+    }
+  }
+}
+  
