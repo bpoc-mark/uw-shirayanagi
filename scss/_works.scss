@@ -2,10 +2,17 @@
   Works
 ==================================*/
 #Works main {
-    width: calc(100% - 120px);
-    background-image: url(/images/top/sect_3/bg_line.png);
-    background-size: 66.8% auto;
-    background-position: 50%;
-    background-repeat: repeat-y;
+  width: calc(100% - 120px);
+  background-image: url(/images/top/sect_3/bg_line.png);
+  background-size: 66.8% auto;
+  background-position: 50%;
+  background-repeat: repeat-y;
+  .sect_1{
+    .wrapper{
+      .p-navi{
+        padding: 70px 0 40px 50px;
+      }
+    }
+  }
 }
   

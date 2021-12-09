@@ -1182,6 +1182,10 @@ img[src$=".png"], img[src$=".jpg"] {
   background-repeat: repeat-y;
 }
 
+#Works main .sect_1 .wrapper .p-navi {
+  padding: 70px 0 40px 50px;
+}
+
 /*==================================
   Works Details
 ==================================*/
