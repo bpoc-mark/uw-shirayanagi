@@ -1,0 +1,19 @@
+/*==================================
+  News
+==================================*/
+#News main {
+  width: calc(100% - 170px);
+  background-image: url(/images/top/sect_3/bg_line.png);
+  background-size: 66.8% auto;
+  background-position: 50%;
+  background-repeat: repeat-y;
+  .sect_1{
+    .wrapper{
+      padding-left: 50px;
+      .p-navi{
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+  

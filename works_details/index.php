@@ -98,20 +98,20 @@
               <div class="works__content--right">
                 <div class="img_wrap">
                   <figure class="img_main">
-                    <img src="/images/works_details/img_1.jpg" alt="">
+                    <img src="/images/works_details/img_1.jpg" alt="株式会社イハラ製作所様 ">
                   </figure>
                   <ul class="img_list">
                     <li class="img_item isActive">
-                      <img src="/images/works_details/img_2.jpg" alt="">
+                      <img src="/images/works_details/img_2.jpg" alt="株式会社イハラ製作所様">
                     </li>
                     <li class="img_item">
-                      <img src="/images/works_details/img_3.jpg" alt="">
+                      <img src="/images/works_details/img_3.jpg" alt="株式会社イハラ製作所様">
                     </li>
                     <li class="img_item">
-                      <img src="/images/works_details/img_4.jpg" alt="">
+                      <img src="/images/works_details/img_4.jpg" alt="株式会社イハラ製作所様">
                     </li>
                     <li class="img_item">
-                      <img src="/images/works_details/img_5.jpg" alt="">
+                      <img src="/images/works_details/img_5.jpg" alt="株式会社イハラ製作所様">
                     </li>
                     <li class="img_item">
                       <img src="/images/works_details/img_6.jpg" alt="">

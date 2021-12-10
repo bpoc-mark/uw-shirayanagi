@@ -14,7 +14,7 @@
   <meta property="og:description" content="<?php echo DESCRIPTION ?>" />
   <meta property="og:url" content="<?php echo CANONICAL ?>" />
 
-  <title><?php echo SITE_NAME ?></title>
+  <title>新着情報 | <?php echo SITE_NAME ?></title>
 
   <?php include($_SERVER['DOCUMENT_ROOT'] . "/inc/header_include.php"); ?>
   <?php include($_SERVER['DOCUMENT_ROOT'] . "/inc/ga.php"); ?>
@@ -29,49 +29,48 @@
     </header>
 
     <main>
-      <div class="container">
-        <ul class="news_ul">
-          <li class="news_li">
-            <a href="">
-              <span class="date">2020.12.08</span>
-              <span class="img_wrap"><img src="https://placehold.jp/80x65.png" alt="ダミー画像"></span>
-              <span class="title">ダミーテキストダミーテキストダミーテキストダミーテキスト</span>
-            </a>
-          </li>
-          <li class="news_li">
-            <a href="">
-              <span class="date">2020.12.08</span>
-              <span class="img_wrap"><img src="https://placehold.jp/80x65.png" alt="ダミー画像"></span>
-              <span class="title">ダミーテキストダミーテキストダミーテキストダミーテキスト</span>
-            </a>
-          </li>
-          <li class="news_li">
-            <a href="">
-              <span class="date">2020.12.08</span>
-              <span class="img_wrap"><img src="https://placehold.jp/80x65.png" alt="ダミー画像"></span>
-              <span class="title">ダミーテキストダミーテキストダミーテキストダミーテキスト</span>
-            </a>
-          </li>
-        </ul>
-
-        <!-- Wordpress -->
-        <div class="page_navigation">
-          <div class="wp-pagenavi">
-            <a class="previouspostslink" href="#" rel="prev">PREV</a>
-            <a class="page smaller" href="#">1</a>
-            <span class="current">2</span>
-            <a class="page larger" href="#">3</a>
-            <a class="nextpostslink" href="#" rel="next">NEXT</a>
-          </div>
+      <section class="jumbo">
+        <div class="jumbo__wrap">
+          <h1 class="jumbo__wrap--head-en">NEWS</h1>
+          <h2 class="jumbo__wrap--head-jp">新着情報</h2>
         </div>
-
-        <!-- Movable Type -->
-        <div class="page_navigation">
-          <ul>
-            <li><span class="current_page">1</span></li>
-            <li><a href="#" class="link_page">2</a></li>
-            <li><a href="#" class="link_page">3</a></li>
+      </section>
+      <div class="sect_1">
+        <div class="wrapper">
+          <ul class="news">
+            <?php
+              $list = [
+                ['2021.07.01', '竣工しました', 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br><br>テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br>', 'リンクの場合', '/images/news/img_1.jpg'],
+                ['2021.06.30', 'こんなことがありました', 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br><br>テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br><br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br>', '', ''],
+                ['2021.06.20', '昨日のこと', 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br><br>テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br><br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br>', '', ''],
+                ['2021.06.10', '休暇のご案内', 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br><br>テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br>', 'リンクの場合', '/images/news/img_2.jpg'],
+                ['2021.06.01', 'HPが新しくなりました', 'テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br><br>テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br><br>テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入りますテキストが入ります<br>テキストが入りますテキストが入りますテキストが入ります<br>', '', ''],
+              ];
+              foreach ($list as $key => $el) :
+              ?>
+              <li class="news__item">
+                <span class="news__item--date"><?= $el[0] ?></span>
+                <h3 class="news__item--title"><?= $el[1] ?></h3>
+                <p class="news__item--excerpt">
+                  <?= $el[2]; ?>
+                  <?php if(!empty($el[3])){ ?>
+                  <a href="" class="news__item--link"><?= $el[3] ?></a>
+                  <?php } ?>
+                </p>
+                <?php if(!empty($el[4])){ ?>
+                  <span class="news__item--img"><img src="<?= $el[4] ?>" alt="<?= $el[4] ?>"></span>
+                <?php } ?>
+              </li>
+            <?php endforeach; ?>
           </ul>
+          <div class="p-navi">
+            <a href="" class="p-navi__btn left">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10"><path d="M6,0,0,5l6,5H8L2,5,8,0Z" fill-rule="evenodd"/></svg>
+            </a>
+            <a href="" class="p-navi__btn right">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10"><path d="M6,0,0,5l6,5H8L2,5,8,0Z" fill-rule="evenodd"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     </main>
