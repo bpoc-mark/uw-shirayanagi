@@ -1446,6 +1446,65 @@ img[src$=".png"], img[src$=".jpg"] {
 }
 
 /*==================================
+  Company
+==================================*/
+#Company main {
+  width: calc(100% - 120px);
+  background-image: url(/images/top/sect_3/bg_line.png);
+  background-size: 66.8% auto;
+  background-position: 50%;
+  background-repeat: repeat-y;
+}
+
+#Company main .sect_1 .wrapper {
+  padding-left: 50px;
+  padding-bottom: 100px;
+}
+
+#Company main .sect_1 .wrapper .row .col:first-child {
+  width: 65.37%;
+  padding-right: 50px;
+}
+
+#Company main .sect_1 .wrapper .row .col:first-child .list__item {
+  width: 100%;
+  display: flex;
+}
+
+#Company main .sect_1 .wrapper .row .col:first-child .list__item:not(:last-child) {
+  margin-bottom: 31px;
+}
+
+#Company main .sect_1 .wrapper .row .col:first-child .list__item--left {
+  width: 165px;
+}
+
+#Company main .sect_1 .wrapper .row .col:first-child .list__item--right {
+  width: calc(100% - 165px);
+}
+
+#Company main .sect_1 .wrapper .row .col:first-child .list__item--right p {
+  line-height: 24px;
+  color: #64666c;
+}
+
+#Company main .sect_1 .wrapper .row .col:first-child .list__item--right p a {
+  color: #64666c;
+}
+
+#Company main .sect_1 .wrapper .row .col:first-child .list__item--right p .map {
+  border-bottom: 1px solid #64666c;
+}
+
+#Company main .sect_1 .wrapper .row .col:first-child .list__item p {
+  letter-spacing: .03em;
+}
+
+#Company main .sect_1 .wrapper .row .col:last-child {
+  width: 34.63%;
+}
+
+/*==================================
   Contact_reset
 ==================================*/
 main#Contact {
