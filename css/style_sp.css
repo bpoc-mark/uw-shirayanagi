@@ -1157,6 +1157,17 @@ img[src$=".png"], img[src$=".jpg"] {
   letter-spacing: .03em;
   white-space: nowrap;
   position: relative;
+  animation: floatText 10s infinite linear;
+}
+
+@keyframes floatText {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    /* left: auto; */
+    transform: translateX(-200%);
+  }
 }
 
 #Top main .sect_3 .wrapper {
@@ -1298,6 +1309,18 @@ img[src$=".png"], img[src$=".jpg"] {
 }
 
 #News main .sect_1 .wrapper .p-navi {
+  margin-bottom: 40px;
+}
+
+/*==================================
+  News Details
+==================================*/
+#News_details main .sect_1 .wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#News_details main .sect_1 .wrapper .p-navi {
   margin-bottom: 40px;
 }
 

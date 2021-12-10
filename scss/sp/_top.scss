@@ -113,6 +113,17 @@
               letter-spacing: .03em;
               white-space: nowrap;
               position: relative;
+              animation: floatText 10s infinite linear;
+            }
+            @keyframes floatText{
+              from {
+                transform: translateX(100%);
+              }
+
+              to {
+                /* left: auto; */
+                transform: translateX(-200%);
+              }
             }
           }
         }
