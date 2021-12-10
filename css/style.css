@@ -910,7 +910,10 @@ img[src$=".png"], img[src$=".jpg"] {
 
 @media (min-width: 900px) {
   .list__link:hover .list__link--img-wrap .list__link--img-wrap--img img {
-    transform: scale(1.2);
+    transform: scale(1.05);
+  }
+  .list__link:hover .list__link--title h3 span::before {
+    width: 100%;
   }
 }
 
@@ -924,6 +927,7 @@ img[src$=".png"], img[src$=".jpg"] {
 
 .list__link--img-wrap--img img {
   transition: .5s ease-in-out;
+  transform: scale(1);
 }
 
 .list__link--img-wrap--location {
@@ -944,16 +948,41 @@ img[src$=".png"], img[src$=".jpg"] {
 }
 
 .list__link--title {
-  position: relative;
-  line-height: 23px;
   padding: 12px 20px 25px;
 }
 
 @media (max-width: 899px) {
   .list__link--title {
     padding: 6.5px 25px 25px;
+  }
+}
+
+.list__link--title h3 {
+  position: relative;
+  line-height: 23px;
+}
+
+@media (max-width: 899px) {
+  .list__link--title h3 {
     line-height: 24px;
     border-right: none;
+  }
+}
+
+.list__link--title h3 span {
+  position: relative;
+}
+
+@media (min-width: 900px) {
+  .list__link--title h3 span::before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .3s ease-in-out;
   }
 }
 

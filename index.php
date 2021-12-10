@@ -86,7 +86,9 @@
 										</figure>
 										<p class="list__link--img-wrap--location"><?= $el[1] ?></p>
 									</div>
-									<h3 class="list__link--title"><?= $el[2] ?></h3>
+									<div class="list__link--title">
+										<h3><span><?= $el[2] ?></span></h3>
+									</div>
 								</a>
 							</li>
 						<?php endforeach; ?>
@@ -110,6 +112,7 @@
 			],
 			transition: ['fade'],
 			animation: 'kenburns',
+			animationDuration: 10000,
 			delay: 5000,
 			walk: function (index, slideSettings) {
 				let slide_num = index + 1;

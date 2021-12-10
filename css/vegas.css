@@ -325,8 +325,8 @@ body.vegas-container > .vegas-slide {
 /* kenburns animation */
 /*******************************************/
 .vegas-animation-kenburns {
-    -webkit-animation: kenburns ease-out;
-            animation: kenburns ease-out;
+    -webkit-animation: kenburns linear;
+            animation: kenburns linear;
 }
 
 @-webkit-keyframes kenburns {
