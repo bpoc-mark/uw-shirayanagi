@@ -9,8 +9,11 @@
   background-repeat: repeat-y;
   .sect_1{
     .wrapper{
+      .list{
+        padding-bottom: 70px;
+      }
       .p-navi{
-        padding: 70px 0 40px 50px;
+        padding: 0 0 40px 50px;
       }
     }
   }

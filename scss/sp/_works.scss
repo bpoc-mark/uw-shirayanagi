@@ -4,8 +4,11 @@
 #Works main {
   .sect_1{
     .wrapper{
+      .list{
+        padding-bottom: 90px;
+      }
       .p-navi{
-        padding: 90px 0 40px 25px;
+        padding: 0 0 40px 25px;
       }
     }
   }
