@@ -48,17 +48,17 @@
               ];
               foreach ($list as $key => $el) :
               ?>
-              <li class="news__item">
-                <span class="news__item--date"><?= $el[0] ?></span>
-                <h3 class="news__item--title"><?= $el[1] ?></h3>
-                <p class="news__item--excerpt">
+              <li class="news__li">
+                <span class="news__li--date"><?= $el[0] ?></span>
+                <h3 class="news__li--title"><?= $el[1] ?></h3>
+                <p class="news__li--excerpt">
                   <?= $el[2]; ?>
                   <?php if(!empty($el[3])){ ?>
-                  <a href="" class="news__item--link"><?= $el[3] ?></a>
+                  <a href="" class="news__li--link"><?= $el[3] ?></a>
                   <?php } ?>
                 </p>
                 <?php if(!empty($el[4])){ ?>
-                  <span class="news__item--img"><img src="<?= $el[4] ?>" alt="<?= $el[4] ?>"></span>
+                  <span class="news__li--img"><img src="<?= $el[4] ?>" alt="<?= $el[4] ?>"></span>
                 <?php } ?>
               </li>
             <?php endforeach; ?>
