@@ -109,7 +109,7 @@ header .header_inner .h_left {
 
 header .header_inner .h_left .logo a {
   display: inline-block;
-  background-image: url(/images/common/header_logo.svg);
+  background-image: url(/images/common/logo_bk.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 216px;
@@ -926,7 +926,7 @@ img[src$=".png"], img[src$=".jpg"] {
 }
 
 .list__link--img-wrap--img img {
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
   transform: scale(1);
 }
 

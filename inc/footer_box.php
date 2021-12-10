@@ -1,6 +1,6 @@
 <div class="footer_inner">
 	<div class="top">
-		<div class="logo"><a href="/"><img src="/images/common/footer_logo.svg" alt="<?php echo SITE_NAME; ?>"></a></div>
+		<div class="logo"><a href="/"><img src="/images/common/logo_wh.svg" alt="<?php echo SITE_NAME; ?>"></a></div>
 		<nav class="nav">
 			<ul class="nav__list">
 				<li class="nav__item"><a class="nav__item__link" href="/">HOME</a></li>

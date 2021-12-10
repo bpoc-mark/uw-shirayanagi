@@ -92,7 +92,7 @@ header.menuActive .header_inner .h_left .logo {
 header.menuActive .header_inner .h_left .logo a {
   width: 142px;
   height: 24px;
-  background-image: url(/images/common/footer_logo.svg);
+  background-image: url(/images/common/logo_wh.svg);
 }
 
 header.menuActive .header_inner .h_right .menu {
@@ -865,7 +865,7 @@ img[src$=".png"], img[src$=".jpg"] {
 }
 
 .list__link--img-wrap--img img {
-  transition: .5s ease-in-out;
+  transition: .3s ease-in-out;
   transform: scale(1);
 }
 
