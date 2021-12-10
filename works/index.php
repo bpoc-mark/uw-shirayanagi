@@ -37,7 +37,7 @@
       </section>
       <section class="sect_1">
 				<div class="wrapper">
-					<ul class="list">
+          <ul class="list">
 						<?php
 						$list = [
 							['/images/top/sect_3/img_1.jpg', 'HOSPITAL', 'タイトルが入りますタイトルが入ります'],
@@ -63,7 +63,9 @@
 										</figure>
 										<p class="list__link--img-wrap--location"><?= $el[1] ?></p>
 									</div>
-									<h3 class="list__link--title"><?= $el[2] ?></h3>
+									<div class="list__link--title">
+										<h3><span><?= $el[2] ?></span></h3>
+									</div>
 								</a>
 							</li>
 						<?php endforeach; ?>
