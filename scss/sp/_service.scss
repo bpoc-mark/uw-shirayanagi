@@ -1,0 +1,61 @@
+/*==================================
+  Service
+==================================*/
+#Service main {
+  .sect_1{
+    .wrapper{
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-bottom: 120px;
+      .service{
+        &--item{
+          &:not(:last-child){
+            margin-bottom: 100px;
+          }
+          &__head{
+            font-size: 22px;
+            margin-bottom: 14px;
+            &::before{
+              content: "";
+              display: block;
+              width: 4px;
+              height: 4px;
+              background-color: #000000;
+              margin-bottom: 30px;
+            }
+          }
+          &__desc2{
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 30px;
+          }
+          .tbl_list{
+            width: 100%;
+            margin-top: 30px;
+            tbody{
+              tr{
+                display: flex;
+                flex-wrap: wrap;
+                &:not(:last-child){
+                  td{
+                    padding-bottom: 20px;
+                  }
+                }
+                th{
+                  width: 100%;
+                  font-weight: 400;
+                  margin-bottom: 6px;
+                }
+                td{
+                  width: 100%;
+                  color: #64666c;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+  

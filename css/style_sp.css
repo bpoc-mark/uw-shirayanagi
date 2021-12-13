@@ -117,7 +117,7 @@ header .header_inner .h_left .logo {
 
 header .header_inner .h_left .logo a {
   display: inline-block;
-  background-image: url(/images/common/header_logo.svg);
+  background-image: url(/images/common/logo_bk.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 160px;
@@ -1405,6 +1405,64 @@ img[src$=".png"], img[src$=".jpg"] {
 
 #Company main .sect_1 .wrapper .row .col:last-child {
   width: 100%;
+}
+
+/*==================================
+  Service
+==================================*/
+#Service main .sect_1 .wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 120px;
+}
+
+#Service main .sect_1 .wrapper .service--item:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+#Service main .sect_1 .wrapper .service--item__head {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+#Service main .sect_1 .wrapper .service--item__head::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #000000;
+  margin-bottom: 30px;
+}
+
+#Service main .sect_1 .wrapper .service--item__desc2 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 30px;
+}
+
+#Service main .sect_1 .wrapper .service--item .tbl_list {
+  width: 100%;
+  margin-top: 30px;
+}
+
+#Service main .sect_1 .wrapper .service--item .tbl_list tbody tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Service main .sect_1 .wrapper .service--item .tbl_list tbody tr:not(:last-child) td {
+  padding-bottom: 20px;
+}
+
+#Service main .sect_1 .wrapper .service--item .tbl_list tbody tr th {
+  width: 100%;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+#Service main .sect_1 .wrapper .service--item .tbl_list tbody tr td {
+  width: 100%;
+  color: #64666c;
 }
 
 /*==================================

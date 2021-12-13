@@ -1,0 +1,63 @@
+/*==================================
+  Service
+==================================*/
+#Service main {
+  width: calc(100% - 120px);
+  background-image: url(/images/top/sect_3/bg_line.png);
+  background-size: 66.8% auto;
+  background-position: 50%;
+  background-repeat: repeat-y;
+  .sect_1{
+    .wrapper{
+      padding-left: 50px;
+      padding-bottom: 100px;
+      .service{
+        &--item{
+          &:not(:last-child){
+            margin-bottom: 100px;
+          }
+          &__head{
+            font-size: 24px;
+            margin-bottom: 14px;
+            &::before{
+              content: "";
+              display: block;
+              width: 4px;
+              height: 4px;
+              background-color: #000000;
+              margin-bottom: 30px;
+            }
+          }
+          &__desc2{
+            font-size: 18px;
+            margin-top: 35px;
+          }
+          .tbl_list{
+            max-width: 810px;
+            margin-top: 30px;
+            tbody{
+              tr{
+                display: table-row;
+                &:not(:last-child){
+                  td{
+                    padding-bottom: 28px;
+                  }
+                }
+                th{
+                  width: 160px;
+                  font-size: 18px;
+                  font-weight: 400;
+                }
+                td{
+                  width: calc(100% - 160px);
+                  color: #64666c;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+  

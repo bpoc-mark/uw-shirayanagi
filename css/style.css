@@ -1505,6 +1505,69 @@ img[src$=".png"], img[src$=".jpg"] {
 }
 
 /*==================================
+  Service
+==================================*/
+#Service main {
+  width: calc(100% - 120px);
+  background-image: url(/images/top/sect_3/bg_line.png);
+  background-size: 66.8% auto;
+  background-position: 50%;
+  background-repeat: repeat-y;
+}
+
+#Service main .sect_1 .wrapper {
+  padding-left: 50px;
+  padding-bottom: 100px;
+}
+
+#Service main .sect_1 .wrapper .service--item:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+#Service main .sect_1 .wrapper .service--item__head {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+#Service main .sect_1 .wrapper .service--item__head::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #000000;
+  margin-bottom: 30px;
+}
+
+#Service main .sect_1 .wrapper .service--item__desc2 {
+  font-size: 18px;
+  margin-top: 35px;
+}
+
+#Service main .sect_1 .wrapper .service--item .tbl_list {
+  max-width: 810px;
+  margin-top: 30px;
+}
+
+#Service main .sect_1 .wrapper .service--item .tbl_list tbody tr {
+  display: table-row;
+}
+
+#Service main .sect_1 .wrapper .service--item .tbl_list tbody tr:not(:last-child) td {
+  padding-bottom: 28px;
+}
+
+#Service main .sect_1 .wrapper .service--item .tbl_list tbody tr th {
+  width: 160px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#Service main .sect_1 .wrapper .service--item .tbl_list tbody tr td {
+  width: calc(100% - 160px);
+  color: #64666c;
+}
+
+/*==================================
   Contact_reset
 ==================================*/
 main#Contact {
