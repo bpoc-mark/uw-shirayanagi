@@ -1568,6 +1568,65 @@ img[src$=".png"], img[src$=".jpg"] {
 }
 
 /*==================================
+  Advantage
+==================================*/
+#Advantage main {
+  width: calc(100% - 120px);
+  background-image: url(/images/top/sect_3/bg_line.png);
+  background-size: 66.8% auto;
+  background-position: 50%;
+  background-repeat: repeat-y;
+}
+
+#Advantage main .sect_1 .wrapper {
+  padding-bottom: 100px;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list:not(:last-child) {
+  margin-bottom: 120px;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--img {
+  display: block;
+  margin-bottom: 50px;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--wrap {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--wrap__left {
+  width: 31.78%;
+}
+
+@media only screen and (max-width: 1400px) {
+  #Advantage main .sect_1 .wrapper .advantage__list--wrap__left {
+    width: 375px;
+  }
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--wrap__left h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--wrap__right {
+  width: 68.22%;
+}
+
+@media only screen and (max-width: 1400px) {
+  #Advantage main .sect_1 .wrapper .advantage__list--wrap__right {
+    width: calc(100% - 375px);
+  }
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--wrap__right p {
+  color: #64666c;
+}
+
+/*==================================
   Contact_reset
 ==================================*/
 main#Contact {

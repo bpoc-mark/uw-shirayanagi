@@ -1,0 +1,42 @@
+/*==================================
+  Advantage
+==================================*/
+#Advantage main {
+  .sect_1{
+    .wrapper{
+      padding-bottom: 120px;
+      .advantage{
+        &__list{
+          &:not(:last-child){
+            margin-bottom: 100px;
+          }
+          &--img{
+            display: block;
+            margin-bottom: 33px;
+          }
+          &--wrap{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 25px;
+            padding-right: 25px;
+            &__left{
+              width: 100%;
+              margin-bottom: 9px;
+              h3{
+                font-size: 22px;
+                line-height: 33px;
+              }
+            }
+            &__right{
+              width: 100%;
+              p{
+                color: #64666c;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+  

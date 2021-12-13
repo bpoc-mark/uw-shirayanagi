@@ -1466,6 +1466,47 @@ img[src$=".png"], img[src$=".jpg"] {
 }
 
 /*==================================
+  Advantage
+==================================*/
+#Advantage main .sect_1 .wrapper {
+  padding-bottom: 120px;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list:not(:last-child) {
+  margin-bottom: 100px;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--img {
+  display: block;
+  margin-bottom: 33px;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--wrap__left {
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--wrap__left h3 {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--wrap__right {
+  width: 100%;
+}
+
+#Advantage main .sect_1 .wrapper .advantage__list--wrap__right p {
+  color: #64666c;
+}
+
+/*==================================
   Contact_reset
 ==================================*/
 main#Contact {
