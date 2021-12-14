@@ -1,0 +1,74 @@
+/*==================================
+  Access
+==================================*/
+#Access main {
+  width: calc(100% - 120px);
+  background-image: url(/images/top/sect_3/bg_line.png);
+  background-size: 66.8% auto;
+  background-position: 50%;
+  background-repeat: repeat-y;
+  .sect_1{
+    .wrapper{
+      padding-bottom: 100px;
+      .map_wrapper{
+        iframe{
+          height: 600px;
+        }
+      }
+      .row{
+        padding: 30px 50px 0;
+        .col{
+          &:first-child{
+            width: 70%;
+          }
+          &:last-child{
+            width: 30%;
+            text-align: right;
+            a{
+              &:hover{
+                span{
+                  &::before{
+                    left: 0%;
+                  }
+                  &::after{
+                    left: 200%;
+                  }
+                }
+              }
+              span{
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                padding-bottom: 6px;
+                &::after{
+                  content: "";
+                  display: inline-block;
+                  width: 100%;
+                  height: 1px;
+                  background-color: #000;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  transition: .3s ease-in-out;
+                }
+                &::before{
+                  content: "";
+                  display: inline-block;
+                  width: 100%;
+                  height: 1px;
+                  background-color: #000;
+                  position: absolute;
+                  bottom: 0;
+                  left: -200%;
+                  transition: .3s ease-in-out;
+                  transition-delay: .3s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+  
