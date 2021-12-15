@@ -1571,6 +1571,70 @@ img[src$=".png"], img[src$=".jpg"] {
 }
 
 /*==================================
+  Recruit
+==================================*/
+#Recruit main .sect_1 .wrapper {
+  padding-bottom: 120px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#Recruit main .sect_1 .wrapper .row .col:first-child {
+  width: 100%;
+}
+
+#Recruit main .sect_1 .wrapper .row .col:first-child table tbody tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Recruit main .sect_1 .wrapper .row .col:first-child table tbody tr th {
+  width: 100%;
+  text-align: left;
+  font-weight: 400;
+  padding-bottom: 6px;
+}
+
+#Recruit main .sect_1 .wrapper .row .col:first-child table tbody tr td {
+  width: 100%;
+  color: #64666c;
+  padding-bottom: 30px;
+}
+
+#Recruit main .sect_1 .wrapper .row .col:first-child table tbody tr td p {
+  color: #64666c;
+  text-indent: -17px;
+  margin-left: 17px;
+}
+
+#Recruit main .sect_1 .wrapper .row .col:first-child table tbody tr td a {
+  color: #64666c;
+}
+
+#Recruit main .sect_1 .wrapper .row .col:first-child .entry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 50px;
+  position: relative;
+  background-color: #000;
+  margin: 5px auto 60px;
+}
+
+#Recruit main .sect_1 .wrapper .row .col:first-child .entry span {
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  z-index: 5;
+  transition: .3s linear;
+}
+
+#Recruit main .sect_1 .wrapper .row .col:last-child {
+  width: 100%;
+}
+
+/*==================================
   Contact_reset
 ==================================*/
 main#Contact {

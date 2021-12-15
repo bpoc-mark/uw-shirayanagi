@@ -1,0 +1,67 @@
+/*==================================
+  Recruit
+==================================*/
+#Recruit main {
+  .sect_1{
+    .wrapper{
+      padding-bottom: 120px;
+      padding-left: 25px;
+      padding-right: 25px;
+      .row{
+        .col{
+          &:first-child{
+            width: 100%;
+            table{
+              tbody{
+                tr{
+                  display: flex;
+                  flex-wrap: wrap;
+                  th{
+                    width: 100%;
+                    text-align: left;
+                    font-weight: 400;
+                    padding-bottom: 6px;
+                  }
+                  td{
+                    width: 100%;
+                    color: #64666c;
+                    padding-bottom: 30px;
+                    p{
+                      color: #64666c;
+                      text-indent: -17px;
+                      margin-left: 17px;
+                    }
+                    a{
+                      color: #64666c;
+                    }
+                  }
+                }
+              }
+            }
+            .entry{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 260px;
+              height: 50px;
+              position: relative;
+              background-color: #000;
+              margin: 5px auto 60px;
+              span{
+                color: #fff;
+                font-size: 14px;
+                position: relative;
+                z-index: 5;
+                transition: .3s linear;
+              }
+            }
+          }
+          &:last-child{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+  
