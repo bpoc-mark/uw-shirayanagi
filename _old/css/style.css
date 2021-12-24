@@ -1909,7 +1909,7 @@ main#Contact input[type="search"]:focus,
 main#Contact input[type="url"]:focus,
 main#Contact textarea:focus {
   color: #000;
-  background-color: #dddddd;
+  background-color: #f1f2f4;
 }
 
 main#Contact .ERR {
@@ -1921,8 +1921,8 @@ main#Contact input[type="text"] {
   line-height: 1.625;
   letter-spacing: 0.03em;
   padding: 12px 21px;
-  border: 1px solid #dddddd;
-  background: #dddddd;
+  border: 1px solid #f1f2f4;
+  background: #f1f2f4;
   box-sizing: border-box;
   color: #000;
   width: 100%;
@@ -1934,12 +1934,19 @@ main#Contact input[type="text"].zip {
 }
 
 main#Contact .zip-wrap {
-  background: #dddddd;
+  background: #f1f2f4;
   display: inline-block;
   position: relative;
   max-width: 247px;
   width: 100%;
-  margin-right: 3px;
+  margin-right: 16px;
+}
+
+@media (max-width: 899px) {
+  main#Contact .zip-wrap {
+    max-width: 150px;
+    margin-right: 11px;
+  }
 }
 
 main#Contact .zip-wrap::before {
@@ -1951,22 +1958,34 @@ main#Contact .zip-wrap::before {
   margin: auto;
 }
 
+@media (max-width: 899px) {
+  main#Contact .zip-wrap::before {
+    left: 10px;
+  }
+}
+
 main#Contact .zip-wrap input {
   padding: 12px 21px 12px 55px;
   width: 100%;
+}
+
+@media (max-width: 899px) {
+  main#Contact .zip-wrap input {
+    padding: 12px 21px 12px 35px;
+  }
 }
 
 main#Contact input[type="button"] {
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
-  font-weight: 500;
+  font-weight: 400;
   color: #000;
-  max-width: 140px;
+  max-width: 100px;
   width: 100%;
-  background: #dddddd;
-  border: 3px solid #dddddd;
-  padding: 10px 19px;
+  background: transparent;
+  border-bottom: 1px solid #000;
+  padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -1987,12 +2006,12 @@ main#Contact input[type="checkbox"] + label::before {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: 3px;
   left: 0;
   width: 22px;
   height: 22px;
-  border: 1px solid #dddddd;
-  background: #dddddd;
+  border: 1px solid #000;
+  background: #fff;
   box-sizing: border-box;
 }
 
@@ -2004,7 +2023,7 @@ main#Contact input[type="checkbox"] + label::after {
   display: block;
   height: 9px;
   left: 7px;
-  margin-top: -8px;
+  margin-top: -6px;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -2031,12 +2050,12 @@ main#Contact input[type="radio"] + label::before {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
   width: 17px;
   height: 17px;
-  border: 1px solid #dddddd;
-  background: #dddddd;
+  border: 1px solid #000;
+  background: #fff;
   box-sizing: border-box;
   border-radius: 50%;
 }
@@ -2045,7 +2064,7 @@ main#Contact input[type="radio"] + label::after {
   content: "";
   display: block;
   position: absolute;
-  top: 4px;
+  top: 9px;
   left: 4px;
   width: 9px;
   height: 9px;
@@ -2068,7 +2087,7 @@ main#Contact .select-box {
   text-align: center;
   position: relative;
   border-radius: 2px;
-  background: #dddddd;
+  background: #f1f2f4;
 }
 
 main#Contact .select-box select {
@@ -2111,8 +2130,8 @@ main#Contact textarea {
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
-  border: 1px solid #dddddd;
-  background: #dddddd;
+  border: 1px solid #f1f2f4;
+  background: #f1f2f4;
   box-sizing: border-box;
   width: 100%;
   padding: 12px 21px;
@@ -2123,7 +2142,7 @@ main#Contact .overscroll {
   overflow-y: scroll;
   height: 237px;
   padding: 25px 21px;
-  background: #dddddd;
+  background: #f1f2f4;
 }
 
 main#Contact .overscroll ul > li {
@@ -2163,35 +2182,40 @@ main#Contact .overscroll ul > li:last-child {
 }
 
 main#Contact .submit_area {
-  margin-top: 85px;
-  text-align: center;
+  margin-top: 35px;
+  text-align: left;
+}
+
+@media (max-width: 899px) {
+  main#Contact .submit_area {
+    text-align: center;
+  }
 }
 
 main#Contact .submit_area span {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.13em;
-  color: #000;
-  width: 262px;
-  background: #dddddd;
+  color: #fff;
+  width: 260px;
+  background: #000;
   box-sizing: border-box;
   font-feature-settings: "palt";
   position: relative;
   display: inline-block;
   text-align: center;
   box-sizing: border-box;
-  border: 3px solid #dddddd;
   transition: all 0.3s ease;
 }
 
 main#Contact .submit_area span input[type="submit"] {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.13em;
-  color: #000;
+  color: #fff;
   cursor: pointer;
   width: 100%;
-  height: 58px;
+  height: 50px;
   box-sizing: border-box;
 }
 
@@ -2201,6 +2225,7 @@ main#Contact .submit_area span:hover {
 
 main#Contact .submit_area span:hover input[type="submit"] {
   color: #000;
+  border: 1px solid #000;
 }
 
 main#Contact .submit_area ul.koumoku {
@@ -2213,26 +2238,25 @@ main#Contact .submit_area ul.koumoku li {
   line-height: 1.4;
   letter-spacing: 0.13em;
   color: #000;
-  width: 262px;
-  background: #5f4b08;
+  width: 260px;
+  background: #000;
   box-sizing: border-box;
   font-feature-settings: "palt";
   position: relative;
   display: inline-block;
   text-align: center;
   box-sizing: border-box;
-  border: 3px solid #5f4b08;
   transition: all 0.3s ease;
 }
 
 main#Contact .submit_area ul.koumoku li input[type="submit"] {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.13em;
-  color: #000;
+  color: #fff;
   cursor: pointer;
   width: 100%;
-  height: 58px;
+  height: 50px;
   box-sizing: border-box;
 }
 
@@ -2242,6 +2266,7 @@ main#Contact .submit_area ul.koumoku li:hover {
 
 main#Contact .submit_area ul.koumoku li:hover input[type="submit"] {
   color: #000;
+  border: 1px solid #000;
 }
 
 main#Contact .submit_area ul.koumoku li:hover svg path {
@@ -2249,24 +2274,29 @@ main#Contact .submit_area ul.koumoku li:hover svg path {
 }
 
 main#Contact .btn_back {
-  margin-top: 25px;
   text-align: center;
+}
+
+main#Contact .btn_back:hover input {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 3px solid #000 !important;
 }
 
 main#Contact .btn_back input {
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: 0.13em;
-  color: #fff;
+  color: #000 !important;
   width: 262px;
-  background: #dddddd;
+  background: #fff !important;
   box-sizing: border-box;
   font-feature-settings: "palt";
   position: relative;
   display: inline-block;
   text-align: center;
   box-sizing: border-box;
-  border: 3px solid #dddddd;
+  border: 1px solid #000;
   transition: all 0.3s ease;
   height: 58px;
   padding: 15px 15px 14px;
@@ -2283,14 +2313,14 @@ main#Contact .contact_back a {
   letter-spacing: 0.13em;
   color: #fff;
   width: 262px;
-  background: #dddddd;
+  background: #f1f2f4;
   box-sizing: border-box;
   font-feature-settings: "palt";
   position: relative;
   display: inline-block;
   text-align: center;
   box-sizing: border-box;
-  border: 3px solid #dddddd;
+  border: 3px solid #f1f2f4;
   transition: all 0.3s ease;
   height: 58px;
   padding: 15px 15px 14px;
@@ -2304,6 +2334,14 @@ main#Contact .contact_back a:hover {
 /*==================================
   Contact
 ==================================*/
+main#Contact {
+  width: calc(100% - 120px);
+  background-image: url(/images/top/sect_3/bg_line.png);
+  background-size: 66.8% auto;
+  background-position: 50%;
+  background-repeat: repeat-y;
+}
+
 main#Contact .container {
   margin: auto;
 }
@@ -2322,16 +2360,21 @@ main#Contact .container p > a:hover {
 }
 
 main#Contact .agree_area {
-  margin: 30px 0 0;
-  text-align: center;
+  margin: 60px 0 0;
+  text-align: left;
+}
+
+main#Contact .agree_area .checkAgree a {
+  border-bottom: 1px solid #000;
 }
 
 main#Contact .need {
-  color: #cc0303;
+  color: #c00000;
 }
 
 main#Contact table {
   display: block;
+  max-width: 1005px;
 }
 
 main#Contact table tbody {
@@ -2339,22 +2382,36 @@ main#Contact table tbody {
 }
 
 main#Contact table tr {
-  display: block;
-  margin-bottom: 30px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+main#Contact table tr:not(:first-child) th {
+  padding-top: 13px;
+}
+
+main#Contact table tr:nth-child(2) input, main#Contact table tr:nth-child(3) input, main#Contact table tr:nth-child(4) input, main#Contact table tr:nth-child(6) input {
+  width: 50%;
+}
+
+main#Contact table tr:nth-child(5) input, main#Contact table tr:nth-child(7) input {
+  width: 75%;
+}
+
+main#Contact table tr:nth-child(5) input .text02, main#Contact table tr:nth-child(7) input .text02 {
+  width: 75%;
 }
 
 main#Contact table tr th {
-  font-size: 16px;
-  line-height: 1;
-  letter-spacing: 0.03em;
-  font-weight: 500;
+  width: 160px;
+  font-weight: 400;
   display: block;
   text-align: left;
-  margin-bottom: 13px;
 }
 
 main#Contact table tr td {
   display: block;
+  width: calc(100% - 160px);
 }
 
 main#Contact table tr td .text02 {
@@ -2362,7 +2419,7 @@ main#Contact table tr td .text02 {
 }
 
 main#Contact .check-list {
-  padding-top: 5px;
+  padding-top: 0;
   padding-left: 0;
 }
 
@@ -2370,11 +2427,26 @@ main#Contact .check-list li {
   display: inline-block;
 }
 
+main#Contact .form_wrap {
+  padding-left: 50px;
+  padding-bottom: 120px;
+}
+
 main#Contact .form_wrap > p {
   margin-top: 0 !important;
+  margin-bottom: 60px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  font-weight: 500;
+}
+
+main#Contact .form_wrap > p span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+main#Contact.sfm2 .form-sec table tr th {
+  padding-top: 0;
 }
 /*# sourceMappingURL=style.css.map */

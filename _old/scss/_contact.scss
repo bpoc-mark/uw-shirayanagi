@@ -1,0 +1,124 @@
+/*==================================
+  Contact
+==================================*/
+
+main#Contact {
+  width: calc(100% - 120px);
+  background-image: url(/images/top/sect_3/bg_line.png);
+  background-size: 66.8% auto;
+  background-position: 50%;
+  background-repeat: repeat-y;
+
+  .container {
+    margin: auto;
+
+    p > a {
+      background: linear-gradient(#000, #000) 0 100%/0 1px no-repeat;
+      background-size: 100% 1px;
+      padding-bottom: 2px;
+      display: inline;
+
+      &:hover {
+        color: #704f00;
+        background: linear-gradient(#704f00, #704f00) 0 100%/0 1px no-repeat;
+        background-size: 100% 1px;
+      }
+    }
+  }
+
+  .agree_area {
+    margin: 60px 0 0;
+    text-align: left;
+    .checkAgree{
+      a{
+        border-bottom: 1px solid #000;
+      }
+    }
+  }
+
+  .need {
+    color: #c00000;
+  }
+
+  table {
+    display: block;
+    max-width: 1005px;
+    tbody {
+      display: block;
+    }
+
+    tr {
+      display: flex;
+      margin-bottom: 20px;
+      &:not(:first-child){
+        th{
+          padding-top: 13px;
+        }
+      }
+      &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(6){
+        input{
+          width: 50%;
+        }
+      }
+      &:nth-child(5), &:nth-child(7){
+        input{
+          width: 75%;
+          .text02{
+            width: 75%;
+          }
+        }
+      }
+      th {
+        width: 160px;
+        font-weight: 400;
+        display: block;
+        text-align: left;
+      }
+
+      td {
+        display: block;
+        width: calc(100% - 160px);
+        .text02 {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  .check-list {
+    padding-top: 0;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .form_wrap {
+    padding-left: 50px;
+    padding-bottom: 120px;
+    > p {
+      margin-top: 0 !important;
+      margin-bottom: 60px;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+      span{
+        @include Roboto();
+        font-size: 18px;
+      }
+    }
+  }
+
+  &.sfm2{
+    .form-sec{
+      table{
+        tr{
+          th{
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+}

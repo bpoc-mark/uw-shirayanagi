@@ -2,6 +2,11 @@
   Contact
 ==================================*/
 main#Contact {
+  .form-sec{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 120px;
+  }
   .container {
     p {
       font-size: 16px;
@@ -16,12 +21,20 @@ main#Contact {
   }
 
   .agree_area {
-    margin: 30px 0 0;
+    margin: 50px 0 0;
     text-align: center;
+    .checkAgree{
+      @include is-max(370px){
+        font-size: 13px;
+      }
+      a{
+        border-bottom: 1px solid #000;
+      }
+    }
   }
 
   .need {
-    color: #cc0303;
+    color: #c00000;
   }
 
   table {
@@ -33,16 +46,13 @@ main#Contact {
 
     tr {
       display: block;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
 
       th {
-        font-size: 16px;
-        line-height: 1;
-        letter-spacing: 0.03em;
-        font-weight: 500;
+        font-weight: 400;
         display: block;
         text-align: left;
-        margin-bottom: 13px;
+        margin-bottom: 10px;
 
         .caution {
           display: block;
@@ -64,7 +74,7 @@ main#Contact {
 
   .check-list {
     padding-left: 0;
-    padding-top: 5px;
+    padding-top: 0;
 
     li {
       display: inline-block;
@@ -73,8 +83,8 @@ main#Contact {
     &.type {
       > li {
         display: block;
-        margin-bottom: 18px;
-
+        margin-bottom: 10px;
+        text-indent: -8px;
         &:last-child {
           margin-bottom: 0;
         }
@@ -104,10 +114,14 @@ main#Contact {
   .form_wrap {
     > p {
       margin-top: 0 !important;
+      margin-bottom: 40px;
       font-size: 16px;
       line-height: 1.5;
       letter-spacing: 0.03em;
-      font-weight: 500;
+      span{
+        @include Roboto();
+        font-size: 18px;
+      }
     }
   }
 }

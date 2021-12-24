@@ -28,32 +28,63 @@
     </header>
 
     <main id="Contact" class="sfm2">
-
+      <section class="jumbo">
+				<div class="jumbo__wrap">
+					<h1 class="jumbo__wrap--head-en">CONTACT</h1>
+					<h2 class="jumbo__wrap--head-jp">お問い合わせ</h2>
+				</div>
+			</section>
       <section class="form-sec">
-        <div class="form_wrap container">
-          <p>
-            入力内容を確認の上、間違いがなければ送信ボタンを押してメッセージをご送信ください。
-          </p>
+        <div class="form_wrap">
+        <p>お仕事のご相談・依頼や、採用エントリーはこちらのフォームよからお問い合わせください。<br>お電話の方はこちら  <br class="sp"><span>TEL : <a href="tel:053-439-0333">053-439-0333</a></span></p>
           <form method="post" name="sfm-form" id="sfm-form" action="./">
 
             <table>
 
               <tr>
-                <th>■お名前<span class="need">必須</span></th>
+                <th>お問い合わせ項目 <span class="need">* </span></th>
+                <td>
+                  <p><?php echo $sfm_html->inquiry; ?></p>
+                </td>
+              </tr>
+
+              <tr>
+                <th>お名前 <span class="need">* </span></th>
                 <td>
                   <p><?php echo $sfm_html->name; ?></p>
                 </td>
               </tr>
 
               <tr>
-                <th>■メールアドレス<span class="need">必須</span></th>
+                <th>フリガナ</th>
+                <td>
+                  <p><?php echo $sfm_html->furigana; ?></p>
+                </td>
+              </tr>
+
+              <tr>
+                <th>会社名</th>
+                <td>
+                  <p><?php echo $sfm_html->company_name; ?></p>
+                </td>
+              </tr>
+
+              <tr>
+                <th>メールアドレス</th>
                 <td>
                   <p><?php echo $sfm_html->email; ?></p>
                 </td>
               </tr>
 
               <tr>
-                <th>■ご住所<span class="need">必須</span></th>
+                <th>電話番号</th>
+                <td>
+                  <p><?php echo $sfm_html->tel; ?></p>
+                </td>
+              </tr>
+
+              <tr>
+                <th>住所</th>
                 <td>
                   <p>〒<?php echo $sfm_html->zip; ?></p>
                   <p><?php echo $sfm_html->address; ?></p>
@@ -61,21 +92,7 @@
               </tr>
 
               <tr>
-                <th>■チェックボックス <span class="need">必須</span></th>
-                <td>
-                  <p><?php echo $sfm_html->check; ?></p>
-                </td>
-              </tr>
-
-              <tr>
-                <th>■セレクトボックス<span class="need">〈必須〉</span></th>
-                <td>
-                  <p><?php echo $sfm_html->select; ?></p>
-                </td>
-              </tr>
-
-              <tr>
-                <th>■お問い合わせ内容</th>
+                <th>お問い合わせ内容</th>
                 <td>
                   <p><?php echo $sfm_html->message; ?></p>
                 </td>
